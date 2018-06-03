@@ -17,16 +17,16 @@ var socketService = require('../sockets/service');
 
 function initJob() {
     var init = cron.schedule('* * * * * *', () => {
-        web3.eth.net.isListening((err, isListening) => {
-            if (isListening && !jobsInitiated) {
+      //  web3.eth.net.isListening((err, isListening) => {
+       //     if (isListening && !jobsInitiated) {
                 job10Sec.start();
                 job10Min.start();
                 job1Sec.start();
                 c.success('Init cron jobs success');
                 jobsInitiated = true;
                 init.stop();
-            }
-        });
+         //   }
+        //});
     });
 }
 

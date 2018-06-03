@@ -1,5 +1,5 @@
 {
-  "name": "cursoangular5_backend",
+  "name": "eth_platform",
   "version": "1.0.0",
   "scripts": {
     "start": "node ./server/index.js"
@@ -24,11 +24,19 @@
     "request": "^2.83.0",
     "socket.io": "^2.0.4",
     "speakeasy": "^2.0.0",
-    "web3": "^1.0.0-beta.26"
+    "web3": "^0.20.1"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
   },
   "main": "./server/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megatone/eth-plat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Megatone/eth-plat/issues"
+  },
+  "homepage": "https://github.com/Megatone/eth-plat#readme",
   "description": ""
 }
