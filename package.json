@@ -1,0 +1,34 @@
+{
+  "name": "cursoangular5_backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./server/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "child-process-promise": "^2.2.1",
+    "colors": "^1.1.2",
+    "connect-multiparty": "^2.1.0",
+    "ethers": "^2.1.3",
+    "express": "^4.16.2",
+    "express3-handlebars": "^0.5.2",
+    "jwt-simple": "^0.5.1",
+    "latch-sdk": "^0.1.0",
+    "moment": "^2.19.2",
+    "mongoose": "^4.13.5",
+    "node-cron": "^1.2.1",
+    "ps-list": "^4.0.0",
+    "request": "^2.83.0",
+    "socket.io": "^2.0.4",
+    "speakeasy": "^2.0.0",
+    "web3": "^1.0.0-beta.26"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "main": "./server/index.js",
+  "description": ""
+}
