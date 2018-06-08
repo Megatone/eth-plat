@@ -20,7 +20,7 @@ mongoose.connect('mongodb://root:LZdyNO4NbG0jW97q@cluster0-shard-00-00-n9itl.mon
     c.info('MongoDb Port "' + settings.mongo.port + '"');
     c.info('MongoDb Database "' + settings.mongo.database + '"');
     socketsService.initSocketService();
- //   cronJobs.initJob();
+    cronJobs.initJob();
     });
 }).catch(err => {
     c.danger(err)

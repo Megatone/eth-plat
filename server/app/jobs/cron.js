@@ -11,22 +11,21 @@ const NodeInformation = require('../models/nodeInformation');
 const Price = require('../models/price');
 const Web3 = require('web3');
 const web3 = new Web3(settings.jsonRPCService.url);
-//const web3 = new Web3('http://' + settings.geth.address + ':' + settings.geth.port);
 var jobsInitiated = false;
 var socketService = require('../sockets/service');
 
 function initJob() {
     var init = cron.schedule('* * * * * *', () => {
-      //  web3.eth.net.isListening((err, isListening) => {
-       //     if (isListening && !jobsInitiated) {
+        web3.eth.net.isListening((err, isListening) => {
+            if (isListening && !jobsInitiated) {
                 job10Sec.start();
                 job10Min.start();
                 job1Sec.start();
                 c.success('Init cron jobs success');
                 jobsInitiated = true;
                 init.stop();
-         //   }
-        //});
+            }
+        });
     });
 }
 
@@ -146,7 +145,7 @@ function updateNodeProcess() {
 }
 
 function emitNodeInfo() {
-   /*  try {
+     try {
         NodeInformation.findOne({}, (err, nodeInformation) => {
             if (err)
                 c.danger('File : cron -> Function : emitNodeInfo() -> ' + err.stack);
@@ -156,7 +155,7 @@ function emitNodeInfo() {
         })
     } catch (err) {
         c.danger('File : cron -> Function : emitNodeInfo() -> ' + err.stack);
-    } */
+    } 
 }
 
 module.exports = {

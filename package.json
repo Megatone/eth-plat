@@ -24,7 +24,7 @@
     "request": "^2.83.0",
     "socket.io": "^2.0.4",
     "speakeasy": "^2.0.0",
-    "web3": "^0.20.1"
+    "web3": "^1.0.0-beta.34"
   },
   "devDependencies": {
     "nodemon": "^1.12.1"
