@@ -150,7 +150,7 @@ function emitNodeInfo() {
             if (err)
                 c.danger('File : cron -> Function : emitNodeInfo() -> ' + err.stack);
             if (!nodeInformation && !err)
-                //c.danger('File : cron -> Function : emitNodeInfo() -> ' + err.stack);
+                c.danger('File : cron -> Function : emitNodeInfo() ->  EEERROOOR EMITIENDO DEL SOCKET' );
             socketService.emitNodeInfo(nodeInformation);
         })
     } catch (err) {
