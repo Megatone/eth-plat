@@ -12,7 +12,7 @@ mongoose.Promise = global.Promise;
 
 
 
-mongoose.connect('mongodb://root:LZdyNO4NbG0jW97q@cluster0-shard-00-00-n9itl.mongodb.net:27017,cluster0-shard-00-01-n9itl.mongodb.net:27017,cluster0-shard-00-02-n9itl.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', { useMongoClient: true }).then(() => {
+mongoose.connect('mongodb://root:LZdyNO4NbG0jW97q@cluster0-shard-00-00-n9itl.mongodb.net:27017,cluster0-shard-00-01-n9itl.mongodb.net:27017,cluster0-shard-00-02-n9itl.mongodb.net:27017/ethereum_platform?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', { useMongoClient: true }).then(() => {
     app.listen(8000, () => {
 //mongoose.connect('mongodb://' + settings.mongo.user + ':' + settings.mongo.password + '@' + settings.mongo.server + '/' + settings.mongo.database + '?retryWrites=true', { useMongoClient: true }).then(() => {
     c.success('Application database connection with Mongo are be success');
